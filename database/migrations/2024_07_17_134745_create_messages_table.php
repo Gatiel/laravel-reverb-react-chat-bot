@@ -11,8 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
+        //create table named messages
         Schema::create('messages', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained();
+            $table->text('text')->nullable();
             $table->timestamps();
         });
     }
