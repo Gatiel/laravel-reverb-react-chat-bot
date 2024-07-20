@@ -64,3 +64,20 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## Commands to run
+
+Build frontend assets:
+npm run build
+
+Start listening to the Laravel events:
+php artisan queue:listen
+
+Start the WebSocket server:
+php artisan reverb:start
+
+Start the server:
+php artisan serve
+
+
