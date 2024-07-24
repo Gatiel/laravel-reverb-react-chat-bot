@@ -16,12 +16,12 @@ const MessageInput = ({ rootUrl }) => {
     const sendMessage = (e) => {
         e.preventDefault();
         if (message.trim() === "") {
-            alert("Por favor insira uma mensagem!");
+            alert("Por favor, insira uma mensagem!");
             return;
         }
 
         messageRequest(message);
-        sendMessage("");
+        setMessage("");
     };
 
     return (
